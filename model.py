@@ -115,9 +115,9 @@ class TransformerEncoder(nn.Module):
         return encoded[:,0] # Selecting only the first row of each batch since it is the cls token
 
 
-class FuseFormer(nn.Module):
+class CrossHL_Transformer(nn.Module):
     def __init__(self, FM, NC, NCLidar, Classes,patchsize):
-        super(FuseFormer, self).__init__()
+        super(CrossHL_Transformer, self).__init__()
         self.patchsize = patchsize
         self.NCLidar = NCLidar
         self.conv5 = nn.Sequential(
