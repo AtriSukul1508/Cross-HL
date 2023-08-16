@@ -1,2 +1,2 @@
-# FuseFormer
-Pytorch implementation of the FuseFormer model 
+# Cross-HL
+Pytorch implementation of the Cross-HL attention transformer model 
