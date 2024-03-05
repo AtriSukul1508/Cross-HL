@@ -4,7 +4,7 @@
 
 The repository contains the implementations for [Cross Hyperspectral and LiDAR Attention Transformer: An Extended Self-Attention for Land Use and Land Cover Classification]()
 
-<img src="./model.jpg" width="700" height="450"/>
+<img src="./model.jpg" width="800" height="450"/>
 
 Citation
 ---------------------
