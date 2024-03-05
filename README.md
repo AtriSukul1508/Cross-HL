@@ -2,7 +2,7 @@
 [Swalpa Kumar Roy](https://swalpa.github.io), Atri Sukul, [Ali Jamali]([https://sites.google.com/view/danfeng-hong](https://www.researchgate.net/profile/Ali-Jamali)), [Juan Mario Haut](https://mhaut.github.io), and [Pedram Ghamisi]([http://jocelyn-chanussot.net/](http://www.ai4rs.com))
 
 
-The repository contains the implementations for [Multimodal Fusion Transformer for Remote Sensing Image Classification](https://www.researchgate.net/publication/359647022_Multimodal_Fusion_Transformer_for_Remote_Sensing_Image_Classification).
+The repository contains the implementations for [Cross Hyperspectral and LiDAR Attention Transformer: An Extended Self-Attention for Land Use and Land Cover Classification]()
 
 <img src="./model.jpg" width="700" height="450"/>
 
