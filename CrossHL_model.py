@@ -96,7 +96,7 @@ class SingleEncoderBlock(nn.Module):
         return x
 
 # Code for Multiple Encoder blocks
-class TransformerEncoder(nn.Module):
+class Encoder(nn.Module):
 
     def __init__(self, dim, num_heads=8, mlp_dim=512, depth=2):
         super().__init__()
@@ -135,7 +135,7 @@ class CrossHL_Transformer(nn.Module):
             nn.ReLU()
         )
 
-        self.ca = TransformerEncoder(FM*4)
+        self.ca = Encoder(FM*4)
         self.fclayer = nn.Linear(FM*4 , Classes)
         self.position_embeddings = nn.Parameter(torch.randn(1, (patchsize**2) + 1, FM*4))
         self.dropout = nn.Dropout(0.1)
