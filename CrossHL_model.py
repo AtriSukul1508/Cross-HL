@@ -139,8 +139,8 @@ class CrossHL_Transformer(nn.Module):
         self.fclayer = nn.Linear(FM*4 , Classes)
         self.position_embeddings = nn.Parameter(torch.randn(1, (patchsize**2) + 1, FM*4))
         self.dropout = nn.Dropout(0.1)
-        torch.nn.init.xavier_uniform_(self.out3.weight)
-        torch.nn.init.normal_(self.out3.bias, std=1e-6)
+        torch.nn.init.xavier_uniform_(self.fclayer.weight)
+        torch.nn.init.normal_(self.fclayer.bias, std=1e-6)
         # randomly initialized cls token
         self.clsTok = nn.Parameter(torch.zeros(1, 1, FM*4))
 
