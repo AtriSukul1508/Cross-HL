@@ -1,3 +1,13 @@
+import pandas as pd
+import matplotlib.pyplot as plt 
+import seaborn as sns
+import numpy as np 
+import torch 
+import torch.nn as nn
+from operator import truediv
+from sklearn.metrics import confusion_matrix, accuracy_score, classification_report, cohen_kappa_score
+test_batch_size = 500
+
 def createConfusionMatrix(y_test,y_pred, plt_name):
     # No of classes for different datasets -> Trento - 6, MUUFL - 11, Houston - 15
     df_cm = pd.DataFrame(confusion_matrix(y_test, y_pred), range(6),range(6))
