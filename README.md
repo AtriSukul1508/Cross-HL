@@ -2,7 +2,7 @@
 [Swalpa Kumar Roy](https://swalpa.github.io), Atri Sukul, [Ali Jamali](https://www.researchgate.net/profile/Ali-Jamali), [Juan Mario Haut](https://mhaut.github.io), and [Pedram Ghamisi](http://www.ai4rs.com)
 
 
-The repository contains the implementations for [Cross Hyperspectral and LiDAR Attention Transformer: An Extended Self-Attention for Land Use and Land Cover Classification]()
+The repository contains the implementations for [Cross Hyperspectral and LiDAR Attention Transformer: An Extended Self-Attention for Land Use and Land Cover Classification](https://ieeexplore.ieee.org/document/10462184)
 
 <img src="./model figs/model.jpg" width="800" height="450"/>
 
