@@ -1,10 +1,41 @@
+import sys
+sys.path.append("./../")
+import os
+import numpy as np
+import random
+from torch import einsum
+import torch.nn.functional as F
+import torch
+import torch.nn as nn
+import torch.utils.data as dataf
+from torch.utils.data import Dataset
+from scipy import io
+from scipy.io import loadmat as loadmat
+from sklearn.decomposition import PCA
+from torch.nn.parameter import Parameter
+import torchvision.transforms.functional as TF
+import time
+from PIL import Image
+import math
+from operator import truediv
+from sklearn.metrics import confusion_matrix, accuracy_score, classification_report, cohen_kappa_score
+from torchsummary import summary
+import matplotlib.pyplot as plt
+import logger
+import torch.backends.cudnn as cudnn
+import re
+from pathlib import Path
+import copy
+cudnn.deterministic = True
+cudnn.benchmark = False
+
 os.environ["CUDA_VISIBLE_DEVICES"]="0"
 datasetNames = ["Trento"] # ["Trento", "MUUFL", "Houston"]
 MultiModalData = 'LiDAR'
 modelName = 'Cross-HL'
 
 patchsize = 11
-batch_size = 64
+batch_size = 64 # batch size for training 
 test_batch_size = 500
 EPOCHS = 100
 learning_rate = 5e-4
@@ -140,4 +171,4 @@ for dataset in datasetNames:
             print('\n')
         print(f"---------- Training Finished for {dataset} dataset -----------")
         print("\nThe Confusion Matrix")
-        record.log_result(OA, AA, KAPPA, ELEMENT_ACC,'./' + dataset +'/'+FileName+'_Report_' + dataset +'.txt')
+        logger.log_result(OA, AA, KAPPA, ELEMENT_ACC,'./' + dataset +'/'+FileName+'_Report_' + dataset +'.txt')
