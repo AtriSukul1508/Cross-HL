@@ -4,7 +4,7 @@
 
 The repository contains the implementations for [Cross Hyperspectral and LiDAR Attention Transformer: An Extended Self-Attention for Land Use and Land Cover Classification](https://ieeexplore.ieee.org/document/10462184)
 
-<img src="./model figs/model.jpg" width="300" height="150"/>
+<img src="./model figs/model.jpg" width="800" height="450"/>
 
 ## Sample Dataset
 Get the disjoint dataset (<a href="https://drive.google.com/folderview?id=1Wy939ZoRWqIRkPE7NBcndn1LhHTW9HQi" target="_blank">TrentoDataset</a> folder) from Google Drive.
